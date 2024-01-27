@@ -5,8 +5,8 @@
 UENUM(BlueprintType)
 enum class EUnlockEvents : uint8
 {
-	VE_NormalEnding					UMETA(DisplayName="Normal Ending"),
-	VE_PlateEnding					UMETA(DisplayName="Dry Ending"),
+	VE_NormalEnding					UMETA(DisplayName="Normal Ending: Very spectacular."),
+	VE_PlateEnding					UMETA(DisplayName="Plate Ending: Not so tasty..."),
 	VE_ToasterEnding 				UMETA(DisplayName="Toaster Ending: Toasty!"),
 	VE_SinkEnding					UMETA(DisplayName="Sink Ending: Let that sink in!"),
 	VE_FridgeEnding					UMETA(DisplayName="Fridge Ending: Cold as ice!"),
