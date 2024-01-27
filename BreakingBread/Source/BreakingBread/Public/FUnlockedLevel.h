@@ -5,8 +5,8 @@
 UENUM(BlueprintType)
 enum class EUnlockEvents : uint8
 {
-	VE_BroodInRooster      UMETA(DisplayName="Broos in Rooster"),
-	VE_Test2      UMETA(DisplayName="Test2"),
+	VE_NormalEnding UMETA(DisplayName="Normal Ending"),
+	VE_Test2       UMETA(DisplayName="Test2"),
 };
 
 
@@ -15,7 +15,7 @@ USTRUCT(BlueprintType) struct FUnlockedLevel : public FTableRowBase
 {
 	GENERATED_BODY()
 public:
-	FUnlockedLevel() : Level(nullptr), UnlockedByKey(EUnlockEvents::VE_BroodInRooster) 
+	FUnlockedLevel() : Level(nullptr), UnlockedByKey() 
 	{	}
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
