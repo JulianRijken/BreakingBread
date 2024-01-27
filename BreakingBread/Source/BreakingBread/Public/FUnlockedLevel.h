@@ -5,7 +5,7 @@
 UENUM(BlueprintType)
 enum class EUnlockEvents : uint8
 {
-	VE_BroodInRooster      UMETA(DisplayName="Broos in Rooster"),
+	VE_BroodInRooster      UMETA(DisplayName="Brood in Rooster"),
 	VE_Test2      UMETA(DisplayName="Test2"),
 };
 
