@@ -1,11 +1,12 @@
 ﻿#pragma once
 #include "Engine/DataTable.h"
+#include "Sound/SoundCue.h"
 #include "FUnlockedLevel.generated.h"
 
 UENUM(BlueprintType)
 enum class EUnlockEvents : uint8
 {
-	VE_NormalEnding					UMETA(DisplayName="Normal Ending: Very cool."),
+	VE_NormalEnding					UMETA(DisplayName="Normal Ending"),
 	VE_PlateEnding					UMETA(DisplayName="Plate Ending: Not so tasty..."),
 	VE_ToasterEnding 				UMETA(DisplayName="Toaster Ending: Toasty!"),
 	VE_BreakfastEnding 				UMETA(DisplayName="Breakfast Ending: Tasty!"),
@@ -30,13 +31,22 @@ USTRUCT(BlueprintType) struct FUnlockedLevel : public FTableRowBase
 {
 	GENERATED_BODY()
 public:
-	FUnlockedLevel() : Level(nullptr), UnlockedByKey() 
-	{	}
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	TSoftObjectPtr<UWorld> Level;
+	FUnlockedLevel(): EndingKey()
+	{}
 	
 	//Added a unlocked by key that will be send by events
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	EUnlockEvents UnlockedByKey;
+	EUnlockEvents EndingKey;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	FName EndingText;
+	
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	TArray<TSoftObjectPtr<UWorld>> LevelsToUnlock;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	TSoftObjectPtr<USoundCue> SoundCueToPlay;
+	
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	TSoftObjectPtr<UTexture2D> MemeImage;
 };
