@@ -8,6 +8,7 @@ enum class EUnlockEvents : uint8
 	VE_NormalEnding					UMETA(DisplayName="Normal Ending: Very cool."),
 	VE_PlateEnding					UMETA(DisplayName="Plate Ending: Not so tasty..."),
 	VE_ToasterEnding 				UMETA(DisplayName="Toaster Ending: Toasty!"),
+	VE_BreakfastEnding 				UMETA(DisplayName="Breakfast Ending: Tasty!"),
 	VE_SinkEnding					UMETA(DisplayName="Sink Ending: Let that sink in!"),
 	VE_FridgeEnding					UMETA(DisplayName="Fridge Ending: Cold as ice!"),
 	VE_OvenEnding					UMETA(DisplayName="Oven Ending: Hot as hell!"),
