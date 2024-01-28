@@ -23,6 +23,7 @@ enum class EUnlockEvents : uint8
 	VE_RocketEnding					UMETA(DisplayName="Rocket Ending: Blast off!"),
 	VE_JesusEnding					UMETA(DisplayName="Jesus Ending: Holy moly!"),
 	VE_InSpaceEnding				UMETA(DisplayName="In Space Ending: You have broken free, Ascetic as a bird you rise above yeasty desires and flour based struggles."),
+	VE_BananaBreadEnding			UMETA(DisplayName="Banana Bread Ending"),
 };
 
 
