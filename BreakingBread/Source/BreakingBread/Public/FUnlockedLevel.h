@@ -27,6 +27,7 @@ enum class EUnlockEvents : uint8
 	VE_GTAEnding					UMETA(DisplayName="Bin Wasted Ending"),
 	VE_RelationShipEnding			UMETA(DisplayName="RelationShip Ending"),
 	VE_StandingEnding				UMETA(DisplayName="Standing Ending"),
+	VE_BackroomEnding				UMETA(DisplayName="Backroom Ending"),
 };
 
 
